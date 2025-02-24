@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receitas</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/estilos.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Receitas</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="receitas.html">Receitas</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/150" class="card-img-top" alt="Receita 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Receita 1</h5>
+                        <p class="card-text">Descrição da receita 1.</p>
+                        <a href="#" class="btn btn-primary">Ver receita</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/150" class="card-img-top" alt="Receita 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Receita 2</h5>
+                        <p class="card-text">Descrição da receita 2.</p>
+                        <a href="#" class="btn btn-primary">Ver receita</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/150" class="card-img-top" alt="Receita 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Receita 3</h5>
+                        <p class="card-text">Descrição da receita 3.</p>
+                        <a href="#" class="btn btn-primary">Ver receita</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <h2>Submeta sua Receita</h2>
+        <form id="recipeForm" novalidate>
+            <div class="form-group">
+                <label for="recipeName">Nome da Receita</label>
+                <input type="text" class="form-control" id="recipeName" required>
+                <div class="invalid-feedback">
+                    Por favor, insira o nome da receita.
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="recipeEmail">E-mail</label>
+                <input type="email" class="form-control" id="recipeEmail" required>
+                <div class="invalid-feedback">
+                    Por favor, insira um e-mail válido.
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="recipeDescription">Descrição</label>
+                <textarea class="form-control" id="recipeDescription" rows="3" required></textarea>
+                <div class="invalid-feedback">
+                    A descrição deve ter pelo menos 20 caracteres.
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="recipeCategory">Categoria da Receita</label>
+                <select class="form-control" id="recipeCategory" required>
+                    <option value="">Selecione...</option>
+                    <option value="Entrada">Entrada</option>
+                    <option value="Prato Principal">Prato Principal</option>
+                    <option value="Sobremesa">Sobremesa</option>
+                </select>
+                <div class="invalid-feedback">
+                    Por favor, selecione uma categoria.
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Enviar Receita</button>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="/js/scripts.js"></script>
+</body>
+
+</html>

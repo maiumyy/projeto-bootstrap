@@ -1,0 +1,57 @@
+$font-family: 'Arial, sans-serif';
+$primary-color: #3498db;
+$secondary-color: #2ecc71;
+$animation-duration: 1s;
+$spacing: 2%;
+$max-width: 90%;
+$card-flex-basis: 300px;
+
+@mixin fadeIn($duration) {
+    animation: fadeIn #{$duration} ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+body {
+    font-family: $font-family;
+}
+
+.navbar {
+    margin-bottom: 20px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    flex: 1 1 $card-flex-basis;
+    margin: $spacing auto;
+    max-width: $max-width;
+    @include fadeIn($animation-duration);
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1 {
+    font-size: clamp(2rem, 5vw, 3rem);
+    text-align: center;
+}
+
+p {
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+    text-align: center;
+}
