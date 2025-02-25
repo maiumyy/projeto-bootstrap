@@ -1,4 +1,4 @@
-$font-family: 'Arial, sans-serif';
+$font-family: "Comfortaa", serif;
 $primary-color: #3498db;
 $secondary-color: #2ecc71;
 $animation-duration: 1s;
@@ -20,12 +20,24 @@ $card-flex-basis: 300px;
     }
 }
 
+* {
+    margin: 0;
+}
+
 body {
     font-family: $font-family;
+    padding: 30px;
+    background-color: #ffd2d2;
 }
 
 .navbar {
     margin-bottom: 20px;
+    border-radius: 20px;
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
 }
 
 .container {
@@ -38,20 +50,34 @@ body {
     flex: 1 1 $card-flex-basis;
     margin: $spacing auto;
     max-width: $max-width;
+    height: 500px;
+    border-radius: 20px;
     @include fadeIn($animation-duration);
 }
 
 .card img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
 }
 
 h1 {
-    font-size: clamp(2rem, 5vw, 3rem);
+    font-size: clamp(2rem, 4vw, 3rem);
     text-align: center;
 }
 
 p {
-    font-size: clamp(1rem, 2.5vw, 1.5rem);
+    font-size: clamp(1rem, 0.8vw, 1.5rem);
     text-align: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff4c4c;
+    color: #fff;
+    border-radius: 20px;
+    padding: 40px;
+    width: 40%;
 }
