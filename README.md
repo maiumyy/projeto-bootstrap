@@ -14,7 +14,7 @@ La Cantinê é um site de receitas desenvolvido utilizando HTML, CSS, JavaScript
 ## Checklist de Implementação
 
 ### RA1 - Estilização e Layout Responsivo
-- [ ] **ID0** - Prototipa interfaces adaptáveis para no mínimo os tamanhos de tela mobile e desktop, usando ferramentas de design como Figma, Quant UX ou Sketch.
+- [x] **ID0** - Prototipa interfaces adaptáveis para no mínimo os tamanhos de tela mobile e desktop, usando ferramentas de design como Figma, Quant UX ou Sketch.
 - [ ] **ID1** - Implementa um layout responsivo de uma página web utilizando um Framework CSS, como Bootstrap, Materialize ou Tailwind (com DaisyUI), aproveitando as técnicas de Flexbox ou Grid.
 - [ ] **ID2** - Utiliza técnicas nativas de CSS, como Flexbox ou Grid Layout, para criar layouts responsivos em diferentes resoluções de tela.
 - [ ] **ID3** - Utiliza componentes CSS e JavaScript de um Framework CSS, aplicando estilos personalizados conforme necessário.
